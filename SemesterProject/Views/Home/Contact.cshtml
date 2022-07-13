@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+<h1>@ViewData["Title"]</h1>
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<div id="contact" style="align-content: center">
+    <div style="align-content: center">
+
+        <h4 style="font-palette:dark">
+            <b>JuicyCafe</b> – Feel free to contact us for any query.
+        </h4>
+        <form action="//submit.form" id="ContactUs100" method="post" style="align-content: center">
+            <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+                <tr>
+                    <td>
+                        <label for="Name">Name*:</label>
+                    </td>
+                    <td>
+                        <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="PhoneNumber">Phone number:</label>
+                    </td>
+                    <td>
+                        <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="FromEmailAddress">Email address*:</label>
+                    </td>
+                    <td>
+                        <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Comments">Comments*:</label>
+                    </td>
+                    <td>
+                        <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+                <button id="submit" name="skip_Submit" onclick="submit()">Submit</button>
+    </div>
+</div>
+<script>
+    function submit() {
+        alert("We will respond shortly");
+    }
+
+</script>

@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+    <head>
+        <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    </head>
+        <section id="home">
+            <h1 class="h-primary">Welcome To My Juicy Cafe</h1>
+            <p>Cafe are such a great place</p>
+            <button class="btn order" onclick="Order()">Order Now</button>
+        </section>
+
+    <div id="clients" style="align-content:center">
+        <h1 class="h-primary centre">Our clients</h1>
+    </div>
+    <div class="client item">
+        <img src="~/images/champs.jpg" alt="abc">
+    </div>
+    <div class="clients">
+        <div class="client item"></div>
+        <img src="~/images/gr.png" alt="abc">
+    </div>
+    <div class="clients">
+        <div class="client item"></div>
+        <img src="~/images/cup.png" alt="abc">
+    </div>
+</div>
+<script>
+    function submit() {
+        alert("We will respond shortly");
+    }
+    function Order() {
+        window.location.href = "/Home/Order";
+    }
+</script>
